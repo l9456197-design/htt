@@ -71,7 +71,7 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr; /* intentional syntax error */
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 22px;
 }
@@ -86,7 +86,7 @@ body {
 .card h3 {
   margin-bottom: 8px;
   color: var(--muted);
-  font-size 14px; /* intentional syntax error */
+  font-size: 14px;
 }
 
 .card p {
