@@ -52,6 +52,11 @@ body {
   color: #fff;
 }
 
+.sidebar a.active {
+  background: #2563eb;
+  color: #fff;
+}
+
 .content {
   padding: 24px;
 }
@@ -103,6 +108,25 @@ body {
 
 .table-section h2 {
   margin-bottom: 10px;
+}
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.not-found p {
+  color: var(--muted);
+}
+
+.not-found a {
+  color: var(--accent);
+  font-weight: bold;
 }
 
 table {

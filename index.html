@@ -4,39 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simple Dashboard</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
       <h2 class="brand">MyPanel</h2>
       <nav>
-        <a href="#">Overview</a>
-        <a href="#">Analytics</a>
-        <a href="#">Orders</a>
-        <a href="#">Users</a>
-        <a href="#">Settings</a>
+        <a href="/" class="active">Overview</a>
+        <a href="/analytics">Analytics</a>
+        <a href="#orders">Orders</a>
+        <a href="#users">Users</a>
+        <a href="/profile">Profile</a>
       </nav>
     </aside>
 
     <main class="content">
       <header class="topbar">
-        <h1>Dashboard<h1> <!-- intentional syntax error -->
+        <h1>Dashboard</h1>
         <input type="search" placeholder="Search..." />
       </header>
 
       <section class="cards">
-        <div class="card">
+        <div class="card" id="revenue">
           <h3>Revenue</h3>
           <p>$12,480</p>
         </div>
-        <div class="card">
+        <div class="card" id="orders">
           <h3>Orders</h3>
           <p>356</p>
         </div>
-        <div class="card">
+        <div class="card" id="users">
           <h3>Users</h3>
-          <p>1,204</p>
+          <p id="total-users">—</p>
         </div>
       </section>
 
@@ -75,5 +75,6 @@
       </section>
     </main>
   </div>
+  <script src="/script.js" defer></script>
 </body>
 </html>

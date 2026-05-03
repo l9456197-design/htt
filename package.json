@@ -1,0 +1,6 @@
+{
+  "name": "simple-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static HTML/CSS dashboard deployed as a Vercel static site"
+}
